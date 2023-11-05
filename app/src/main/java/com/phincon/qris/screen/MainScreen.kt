@@ -130,7 +130,7 @@ fun RowScope.AddItem(
         },
         icon = {
             Icon(
-                imageVector = if(screen.title == "Voucher") ImageVector.vectorResource(id = R.drawable.ic_voucher) else if(screen.title == "Chart")ImageVector.vectorResource(id = R.drawable.ic_chart)else screen.icon,
+                imageVector = if(screen.title == "Promo") ImageVector.vectorResource(id = R.drawable.ic_voucher) else if(screen.title == "Portfolio")ImageVector.vectorResource(id = R.drawable.ic_chart)else screen.icon,
                 contentDescription = "Navigation Icon",
                 tint = if(currentDestination?.route == screen.route) MaterialTheme.colorScheme.primary else Color.Gray
             )
