@@ -23,10 +23,12 @@ import androidx.room.Room
 import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanOptions
 import com.phincon.qris.database.AppDatabase
+import com.phincon.qris.model.PromoParcelable
 import com.phincon.qris.navigation.BottomNavGraph
 import com.phincon.qris.screen.payment.vm.PaymentViewModel
 import com.phincon.qris.screen.home.vm.HomeViewModel
 import com.phincon.qris.screen.login.vm.LoginViewModel
+import com.phincon.qris.screen.promo.vm.PromoViewModel
 import com.phincon.qris.ui.theme.Qris_mobileTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -111,6 +113,15 @@ class MainActivity : ComponentActivity() {
 
     fun navigateToChartDetail(label: String){
         val route = "detailChart/${label}"
+        navController.navigate(route)
+    }
+
+    fun navigateToPromoDetail(promo: PromoParcelable){
+        val route = "detailPromo"
+        navController.currentBackStackEntry?.savedStateHandle?.set(
+            key = "promo",
+            value = promo
+        )
         navController.navigate(route)
     }
 

@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "<null>",
+        "count": 14,
+        "alt": 17,
+        "desc": "Potongan langsung (diskon) Rp 150.000,- untuk minimal transaksi Rp 1.000.000, kuota 15 transaksi pertama per hari.\\n- Berlaku tiap Kamis dan Jumat.\\n- Berlaku untuk pembelian Tiket Sriwijaya Air dan NAM Air di Website dan Mobile Apps Sriwijaya Air\\n- Potongan harga langsung diperoleh ketika nomor Kartu BNI dimasukkan (tanpa kode promo)\\n- Syarat dan ketentuan berlaku\\nInfo lebih lanjut hubungi BNI Call 1500046",
+        "desc_promo": "<null>",
+        "latitude": "-6.203606",
+        "longitude": "106.803022",
+        "lokasi": "Pejompongan",
+        "nama": "BNI Credit Card",
+        "name_promo": "<null>",
+        "createdAt": "2023-10-31T20:02:23.175Z",
+        "updatedAt": "2023-10-31T20:02:23.175Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": " the hat",
+        "count": 28,
+        "alt": 19,
+        "desc": "It was a simple tip of the hat. Grace didn't think that anyone else besides her had even noticed it. It wasn't anything that the average person would notice, let alone remember at the end of the day. That's why it seemed so unbelievable that this little gesture would ultimately change the course of the world.",
+        "desc_promo": " the hat",
+        "latitude": "-82.031063965501",
+        "longitude": "-124.612081930480",
+        "lokasi": "Somewhere",
+        "nama": "hat",
+        "name_promo": "hat",
+        "createdAt": "2023-11-01T09:42:38.452Z",
+        "updatedAt": "2023-11-06T08:36:18.464Z"
+      }
+    }
+
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 4
+    }
+  }
+}

@@ -66,12 +66,7 @@ fun PortfolioDetailScreen(navController: NavHostController, label: String) {
             Divider()
             Button(
                 onClick = {
-                    val route = "main/${user}"
-                    navController.navigate(route) {
-                        popUpTo("main/${user}") {
-                            inclusive = true
-                        }
-                    }
+                    navController.popBackStack()
                 }, modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp)

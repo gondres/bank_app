@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
+    id("kotlin-parcelize")
     kotlin("kapt")
 }
 
@@ -91,21 +92,23 @@ dependencies {
     // Hilt
     implementation("com.google.dagger:hilt-android:2.44")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
     // Viewmodel Lifecycle
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     implementation("androidx.compose.runtime:runtime-livedata:1.3.2")
-
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     // Preference
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
     // Gson
     implementation("com.google.code.gson:gson:2.10.1")
 
-    //Unit Testing
+    // Unit Testing
     testImplementation(kotlin("test"))
-
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.robolectric:robolectric:4.9")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
@@ -113,4 +116,15 @@ dependencies {
     testImplementation("org.mockito.kotlin:mockito-kotlin:5.1.0")
     testImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
     testImplementation("androidx.arch.core:core-testing:2.2.0")
+
+    // Shimmer
+    implementation("com.valentinilk.shimmer:compose-shimmer:1.2.0")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // OkHTTP
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 }

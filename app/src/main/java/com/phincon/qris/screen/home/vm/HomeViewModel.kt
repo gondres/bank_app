@@ -3,6 +3,7 @@ package com.phincon.qris.screen.home.vm
 import androidx.lifecycle.ViewModel
 import com.phincon.qris.database.repository.HistoryRepository
 import com.phincon.qris.database.repository.UserRepository
+import com.phincon.qris.service.repository.PromoRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

@@ -43,21 +43,24 @@ import com.phincon.qris.R
 import com.phincon.qris.navigation.BottomBarNav
 import com.phincon.qris.navigation.RouteNav
 import com.phincon.qris.screen.home.vm.HomeViewModel
+import com.phincon.qris.screen.promo.vm.PromoViewModel
 
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Preview(showBackground = true)
 @Composable
-fun MainScreen(args: String, homeViewModel: HomeViewModel, mainNavHostController: NavHostController) {
+fun MainScreen(argsHome: String,  argsPromo: String, mainNavHostController: NavHostController, homeViewModel: HomeViewModel) {
+
     val navController = rememberNavController()
     val activity = LocalView.current.context as? MainActivity
     val context = LocalContext.current
-    Log.d("Main Screen",args)
+
+    Log.d("Main Screen",argsHome)
     Scaffold(
         topBar = {
             Column {
                 TopAppBar(
-                    title = { Text(text = args) },
+                    title = { Text(text = argsHome) },
                     navigationIcon = {
                         IconButton(onClick = { /* do something */ }) {
                             Icon(
@@ -90,7 +93,7 @@ fun MainScreen(args: String, homeViewModel: HomeViewModel, mainNavHostController
                 .fillMaxSize()
                 .padding(it)
         ) {
-            BottomBarNav(navController, args, homeViewModel)
+            BottomBarNav(homeViewModel, navController, argsHome, argsPromo)
         }
 
     }

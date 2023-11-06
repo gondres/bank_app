@@ -56,4 +56,10 @@ sealed class RouteNav(
         title = "Detail Chart Screen",
         icon = Icons.Default.Home
     )
+
+    object DetailPromo : RouteNav(
+        route = "detailPromo",
+        title = "Detail Promo",
+        icon = Icons.Default.Home
+    )
 }
